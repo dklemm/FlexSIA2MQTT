@@ -1,3 +1,4 @@
+dist/
 node_modules/
 .node_modules/
 built/*
@@ -78,7 +79,7 @@ tests/cases/user/*/**/*.d.ts
 tests/baselines/reference/dt
 .failed-tests
 TEST-results.xml
-package-lock.json# Logs
+# Logs
 logs
 *.log
 npm-debug.log*
