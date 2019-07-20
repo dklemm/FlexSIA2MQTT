@@ -2,12 +2,9 @@
   "name": "typeflex",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "./dist/server.js",
   "scripts": {
-    "postinstall": "tsc -p ./",
-    "watch": "tsc -w -p ./",
-    "debug": "nodemon --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/index.js",
-    "docker-debug": "docker-compose up",
+    "postinstall": "tsc -p ./src",
     "start": "node ./dist/server.js"
   },
   "keywords": [],
