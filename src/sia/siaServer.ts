@@ -1,5 +1,5 @@
 import {createServer, Server, Socket} from 'net';
-import {SiaServerConfig} from "../Config";
+import {SiaServerConfig} from "../config";
 import {SIABlock} from "./siaBlock";
 import {FunctionCodes} from "../functionCodes";
 import {ZoneEvent} from "../events/ZoneEvent";
@@ -17,7 +17,7 @@ export class SIAServer extends events.EventEmitter {
         super();
         this.server = createServer();
         this.server.on('connection', (socket: Socket) => this.handleConnection(socket));
-        this.server.listen(config.port, config.hostname, () => this.listening());
+        this.server.listen(config.port, '127.0.0.1', () => this.listening());
     }
 
     listening() {

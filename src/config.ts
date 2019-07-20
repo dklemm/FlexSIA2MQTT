@@ -24,5 +24,5 @@ export interface ZoneConfig {
 }
 
 export function getConfig() : Config {
-    return yaml.safeLoad(fs.readFileSync('./dist/config.yml', 'utf8'));
+    return yaml.safeLoad(fs.readFileSync('./config.yml', 'utf8'));
 }

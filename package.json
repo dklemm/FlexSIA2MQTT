@@ -5,6 +5,7 @@
   "main": "./dist/server.js",
   "scripts": {
     "postinstall": "tsc -p ./src",
+    "postinstallx": "ls src",
     "start": "node ./dist/server.js"
   },
   "keywords": [],

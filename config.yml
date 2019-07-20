@@ -1,0 +1,16 @@
+mqtt:
+  brokerUrl : mqtt://192.168.1.33
+  baseTopic: sia2mqtt
+
+sia:
+  port: 10500
+  hostname: 127.0.0.1
+
+zones:
+  1021:
+    name: front_door
+    handler: door
+
+  1018:
+    name: office_pir
+    handler: pir

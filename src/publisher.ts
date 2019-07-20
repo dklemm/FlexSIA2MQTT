@@ -1,7 +1,7 @@
 import { IClientOptions, IClientPublishOptions} from "mqtt";
 import MQTT, {AsyncMqttClient} from 'async-mqtt';
 import {ZoneEvent} from "./events/ZoneEvent";
-import {MqttConfig} from "./Config";
+import {MqttConfig} from "./config";
 
 export class Publisher {
 

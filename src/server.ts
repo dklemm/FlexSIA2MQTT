@@ -1,6 +1,6 @@
 import {Publisher} from "./publisher";
 import {ZoneEvent} from "./events/ZoneEvent";
-import {getConfig} from "./Config";
+import {getConfig} from "./config";
 import {SIAServer} from "./sia/siaServer";
 import {getZoneEventHandler} from "./handlers/ZoneEventHandler";
 

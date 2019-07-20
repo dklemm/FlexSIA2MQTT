@@ -9,5 +9,6 @@ Requires (tested with)
 
 https://www.security.honeywell.com/uk/All-Categories/intruder-detection-systems/control-panels/galaxy-flex-series
 
+# Docker 
 
-
+docker run sia2mqtt -p 10500:10500 -v /config.yml:/config.yml
