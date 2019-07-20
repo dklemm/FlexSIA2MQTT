@@ -4,7 +4,7 @@ mqtt:
 
 sia:
   port: 10500
-  hostname: 127.0.0.1
+  hostname: 192.168.1.33
 
 zones:
   1021:

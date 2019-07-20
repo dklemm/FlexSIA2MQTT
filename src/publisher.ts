@@ -1,6 +1,5 @@
-import { IClientOptions, IClientPublishOptions} from "mqtt";
+import {IClientOptions, IClientPublishOptions} from "mqtt";
 import MQTT, {AsyncMqttClient} from 'async-mqtt';
-import {ZoneEvent} from "./events/ZoneEvent";
 import {MqttConfig} from "./config";
 
 export class Publisher {
@@ -18,7 +17,6 @@ export class Publisher {
         } as IClientOptions;
 
         this.mqttClient = MQTT.connect(config.brokerUrl, options);
-        //this.mqttClient.on('connect', () => this.publishOnline());
     }
 
     public async publishOnline() : Promise<any> {

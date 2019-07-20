@@ -17,7 +17,7 @@ export class SIAServer extends events.EventEmitter {
         super();
         this.server = createServer();
         this.server.on('connection', (socket: Socket) => this.handleConnection(socket));
-        this.server.listen(config.port, '127.0.0.1', () => this.listening());
+        this.server.listen(config.port, config.hostname, () => this.listening());
     }
 
     listening() {
