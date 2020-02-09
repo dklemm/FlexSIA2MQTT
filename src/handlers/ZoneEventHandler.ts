@@ -7,7 +7,7 @@ import {PirZoneEventHandler} from "./PirZoneEventHandler";
 export function getZoneEventHandler(zoneConfig : ZoneConfig) : ZoneEventHandler {
     switch (zoneConfig.handler) {
         case "door" : return new DoorZoneEventHandler(zoneConfig);
-        case "pir" : return new PirZoneEventHandler();
+        case "pir" : return new PirZoneEventHandler(zoneConfig);
     }
 }
 
